@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% if title %}
+        <title>{{ title }} | Eoin McInerney</title>
+    {% else %}
+        <title>Eoin McInerney</title>
+    {% endif %}
+
+</head>
+
+<body>
+
+
+      		{% block body %}
+      		{% endblock %}
+
+
+</body>
+</html>
+
