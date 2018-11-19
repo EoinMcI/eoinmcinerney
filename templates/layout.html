@@ -12,8 +12,19 @@
 </head>
 
 <body>
+	<nav class="" role="navigation">
+		<ul class="">
 
+			<li><a href="{{ url_for('home_pg') }}">Home</a></li>
+			<li><a href="{{ url_for('why_pg') }}">Why</a></li>
+			<li><a href="{{ url_for('about_pg') }}">About</a></li>
+			<li><a href="{{ url_for('monthly_update_home_pg') }}">Monthly update homepage</a></li>
+			<li><a href="{{ url_for('evergreen_home_pg') }}">Evergreen content homepage</a></li>
+			<li><a href="{{ url_for('local_home_pg') }}">Local content homepage</a></li>
+			<li><a href="{{ url_for('thoughts_home_pgs') }}">Thoughts homepage</a></li>
 
+		</ul>
+	</nav>
       		{% block body %}
       		{% endblock %}
 
