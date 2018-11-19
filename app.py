@@ -1,14 +1,9 @@
-from flask import Flask, redirect, render_template, request, session, abort, flash, url_for
-
-
+from flask import Flask
 application = Flask(__name__)
-application.config['SECRET_KEY'] = "somethingsecure"
-
 
 @application.route("/")
-def home_pg():
+def hello():
+    return "<h1 style='color:blue'>Hello There!</h1>"
 
-    return render_template('home.html',title='Eoin McInerney')
-
-if __name__ == '__main__':
-    application.run()
+if __name__ == "__main__":
+    application.run(host='0.0.0.0')
