@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% if title %}
+        <title>{{ title }} | Eoin McInerney</title>
+    {% else %}
+        <title>Eoin McInerney</title>
+    {% endif %}
+
+</head>
+
+<body>
+	<nav class="" role="navigation">
+		<ul class="">
+
+			<li><a href="{{ url_for('site.home_pg') }}">Home</a></li>
+			<li><a href="{{ url_for('site.why_pg') }}">Why</a></li>
+			<li><a href="{{ url_for('site.about_pg') }}">About</a></li>
+			<li><a href="{{ url_for('monthly_updates.home_pg') }}">Monthly update homepage</a></li>
+			<li><a href="{{ url_for('evergreen.home_pg') }}">Evergreen content homepage</a></li>
+			<li><a href="{{ url_for('local.home_pg') }}">Local content homepage</a></li>
+			<li><a href="{{ url_for('thoughts.home_pg') }}">Thoughts homepage</a></li>
+
+		</ul>
+	</nav>
+      		{% block body %}
+      		{% endblock %}
+
+
+</body>
+</html>
+
